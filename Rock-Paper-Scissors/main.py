@@ -46,7 +46,8 @@ else:
 computer_options = [rock, paper, scissors]
 computer_num = len(computer_options)
 computer_choice = computer_options[random.randint(0, computer_num - 1)]
-print(f"The computer chooses {computer_choice}")
+if user_choice[0] == "rock" or user_choice[0] == "paper" or user_choice[0] == "scissors":
+  print(f"The computer chooses {computer_choice}")
 
 if user_choice[0] == "rock" and computer_choice == rock:
   print("It's a draw!")
